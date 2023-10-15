@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react"; 
 import Card from 'react-bootstrap/Card';
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 
 export default function BlogList (){
 
