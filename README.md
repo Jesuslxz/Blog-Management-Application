@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<!-- 
+    Copyright (c) 2023 Promineo Tech
+    Author:  Promineo Tech Academic Team
+    Subject: React Router Boiler Plate
+  ------------------------------------------->
+  
+# Blog Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React-based web application for managing blog posts.
 
-## Available Scripts
+# Things to note
+  - Currently using personal MockAPI free endpoint
+  - Maximum of 100 blog post and 100 comments across the app
+  - No Updating Comments on post
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- List all blog posts.
+- View detailed information about a specific blog post using a unique ID and all the comments associated with the post.
+- Create new blog posts.
+- Create new Comments
+- Update existing blog posts using a PUT request.
+- Delete specific blog posts and comments based on their unique ID.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React
+- React Router for routing.
+- React Bootstrap and Bootstrap for styling.
+- Fetch API for handling HTTP requests.
+- MockAPI for dummy API endpoints and database to hold test content.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
 
-### `npm run build`
+1. **Clone the repository:**
+   
+   \```
+   git clone https://github.com/your-username/your-repo-name.git
+   \```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Navigate to the project directory:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   \`
+   cd your-repo-name
+   \`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Install the dependencies:**
 
-### `npm run eject`
+   \```
+   npm install
+   \```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Run the development server:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   \```
+   npm start
+   \```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open your browser and navigate to `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **View Blog Posts**: Click on "Blog List" on the navigation bar to see a list of all blog posts.
+- **Create New Blog Post**: Navigate to the "Admin" page and fill in the details to add a new blog post.
+- **Create New Comment on Blog Post**: Navigate to the "Admin" page and fill in the details to add a comment on a blog post.
+- **Update Blog Post**: Navigate to the "Admin" page and fill in the details to update a ID specific blog post.
+- **Delete Blog Post**: Navigate to the "Admin" page and fill in the details to Delete a ID specific blog post.
+- **Delete Comment on Blog Post**: Navigate to the "Admin" page and fill in the details to Delete a ID specific comment on a blog post.
