@@ -1,0 +1,57 @@
+
+/* Ensure full height for root elements */
+html, body {
+   height: 100%;
+   margin: 0;
+
+}
+
+
+
+#app-container {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* Use viewport height to ensure full screen height */ 
+   background-color: rgb(196, 196, 196);
+}
+
+#content {
+   flex: 1;
+}
+body {
+   font-family: Arial, sans-serif;
+   margin: 50px;
+   line-height: 1.6;
+}
+header {
+   text-align: center;
+   border-bottom: 2px solid #333;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+}
+section {
+   margin-bottom: 30px;
+}
+h1, h2 {
+   color: #444;
+}
+h2 {
+   margin-top: 30px;
+   margin-bottom: 15px;
+}
+ul {
+   list-style-type: disc;
+   margin-left: 20px;
+}
+a {
+   color: #007BFF;
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: underline;
+}
+code {
+   background-color: #f8f8f8;
+   padding: 2px 4px;
+   font-family: "Courier New", monospace;
+}
