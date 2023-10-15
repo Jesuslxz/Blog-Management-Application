@@ -36,7 +36,7 @@ export default function EditPostForm(){
             });
 
         // reset the form after submit
-        setName('');
+        setUpdatedName('');
         setUpdatedContent('');
         setPostId('');
     };

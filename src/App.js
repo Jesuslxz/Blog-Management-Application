@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navigation from './Components/Navbar';
 import BlogList from './Components/BlogList';
@@ -15,39 +15,32 @@ import EditPostForm from './Components/EditPostForm';
 export default function App() {
   return (
   <div id= "app-container">
-      <Router>
-      <div id='content'>
-      <Navigation /> {/*navbar for react router changes*/}
+<Router>
+    <div id='content'>
+        <Navigation />
 
-      <Switch>
-        <Route path="/post/:id">
-          <BlogPost />
-        </Route>
-
-        <Route path="/post/">
-          <BlogList />
-        </Route>
-
-        <Route path="/admin">
-          <h1>Admin Page</h1>
-          <CreatePostForm />
-          <br />
-          <EditPostForm />
-          <br />
-          <DeletePost />
-          <br />
-          <AddComment />
-          <br />
-          <DeleteComment />
-        </Route>
-
-        <Route path="/" exact>
-          <HomePage />
-        </Route>
-      </Switch> 
+        <Routes>
+            <Route path="/post/:id" element={<BlogPost />} />
+            <Route path="/post" element={<BlogList />} />
+            <Route path="/admin" element={
+                <div>
+                    <h1>Admin Page</h1>
+                    <CreatePostForm />
+                    <br />
+                    <EditPostForm />
+                    <br />
+                    <DeletePost />
+                    <br />
+                    <AddComment />
+                    <br />
+                    <DeleteComment />
+                </div>
+            } />
+            <Route path="/" element={<HomePage />} />
+        </Routes>
     </div>
     <Footer />
-    </Router>
+</Router>
   </div>
   );
 }
